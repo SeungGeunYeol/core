@@ -17,6 +17,10 @@ public class AppConfig {
     /**
      * 생성자 주입
      */
+
+    // @Bean memberService -> new MemoryMemberRepository()
+    // @Bean orderService -> new MemoryMemberRepository()
+
     @Bean
     public MemberService memberService() {
         return new MemberServiceImpl(memberRepository());
